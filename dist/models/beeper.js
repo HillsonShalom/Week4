@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Beeper {
-    constructor(id, name) {
+    constructor(name) {
         this.detonated_at = null;
         this.location = null;
         this.getAsDto = () => {
@@ -16,7 +16,7 @@ class Beeper {
                 latitude: ((_b = this.location) === null || _b === void 0 ? void 0 : _b.latitude) || 0
             };
         };
-        this.id = id || 0;
+        this.id = 0;
         this.name = name || 'Unknown';
         this.status = 'manufactured';
         this.created_at = new Date();

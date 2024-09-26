@@ -8,7 +8,6 @@ export interface beeperDTO extends location {
     detonated_at: Date | null;
 }
 
-export interface createDto {
-
+export interface createReq {
+    name: string;
 }
-
